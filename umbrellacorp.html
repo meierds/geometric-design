@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body {
+    margin: 0;
+}
+.banner{
+    height: 240px;
+    width: 100%;
+    background: linear-gradient(to bottom right, red, black 25%);
+    position: relative;
+}
+.logo-container{
+    width: 400px;
+    height: 160px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 30px;
+}
+.umbrella{    
+	background:
+		linear-gradient(135deg, transparent 25px, #c10b0b 25px) top left,
+		linear-gradient(225deg, transparent 25px, #c10b0b 25px) top right,
+		linear-gradient(315deg, transparent 25px, #c10b0b 25px) bottom right,
+		linear-gradient(45deg,  transparent 25px, #c10b0b 25px) bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    margin: 0;
+
+}
+.umbrella::after, .umbrella::before{
+	content: "";
+    display: block;
+    border-left: 25px solid transparent; 
+    border-top: 60px solid #ffffff;
+    border-right: 25px solid transparent;
+    border-bottom: 60px solid #ffffff;
+	position: absolute;
+    left: 35px;
+    top: 0px;
+}
+
+.umbrella::before{
+	transform: rotate(90deg);
+}
+
+.logo-text{
+    color: white;
+    padding: 0 30px 0 140px;
+    font-family: monospace;
+    font-size: 4em;
+    margin: 0;
+    line-height: 1em;
+}
+.top{
+    font-size: 2em;
+    float: right;
+}
+
+.logo-sub{
+    margin: 0 0 0 140px;
+    padding-top: 30px;
+    color: white;
+    font-family: monospace;
+    font-size: 1.1em
+}
+
+</style>
+</head>
+<body>
+    <div class='banner'>
+        <div class = 'logo-container'>
+            <p class='umbrella'></p>
+            <h1 class='logo-text' style='margin-top: 10px'>UMBRELLA <h2 class='logo-text top'>CORPORATION</h2></h1>
+            <p class='logo-sub'>Our business is life itself...</p>
+        </div>
+    </div>
+    </body>
+</html>
